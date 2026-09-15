@@ -6,20 +6,15 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-    int A, B;
-    if (cin >> A >> B) {
-        if (A + B == 5) {
-            B += 3;
-            cout << (2 * A + B) << "\n";
+    int G, P;
+    if (cin >> G >> P) {
+        if (G > P) {
+            cout << "El negocio si va a jalar\n";
+            cout << (G - P) << "\n";
         }
         else {
-            A -= 1;
-            if ((7 * A + B) % 2 == 0) {
-                cout << (A - B) << "\n";
-            }
-            else {
-                cout << (A * B) << "\n";
-            }
+            cout << "Dejalo ya esta muerto\n";
+            cout << (P - G) << "\n";
         }
     }
 
